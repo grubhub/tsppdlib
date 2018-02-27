@@ -1,6 +1,14 @@
 # TSPPD Test Instance Library
 
-This repository contains problem files used to test models for solving the Traveling Salesman with Pickup and Delivery. Problem types are divided by subdirectory. `random-uniform/` contains problem instances with random pickup and delivery locations distributed uniformly over 1000x1000 squares. `grubhub/` contains problem instances generated from observed meal delivery requests at Grubhub and actual travel `grubhub/png/` contains graphical representations of test instances, along with optimal tours.
+This repository contains problem files used to test models for solving the Traveling Salesman Delivery Problem with Pickup and Delivery. The sample instances have been provided by [Grubhub](https://www.grubhub.com) to advance research on the subject.  
+
+Problem types are divided by subdirectory: 
+
+* random-uniform/ contains problem instances with random pickup and delivery locations distributed uniformly over 1000x1000 squares. 
+* grubhub/ contains problem instances generated from observed meal delivery requests and actual travel.
+* grubhub/png/ contains graphical representations of test instances, along with optimal tours.
+
+The .tsp files use an extension of the TSPLIB format which adds precedence relations in a PRECEDENCE_SECTION. For instance, the following TSPPD instance requires +i precede -i in any feasible tour, for i in {0, 1, ..., n}.
 
 The `.tsp` files use an extension of the TSPLIB format which adds precedence relations in a `PRECEDENCE_SECTION`. For instance, the following TSPPD instance requires `+i` precede `-i` in any feasible tour, for `i` in `{0, 1, ..., n}`.
 
