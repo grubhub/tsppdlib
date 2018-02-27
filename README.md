@@ -4,10 +4,11 @@ This repository contains problem files used to test models for solving the Trave
 
 Problem types are divided by subdirectory:
 
-* `instances/random-uniform/` contains problem instances with random pickup and delivery locations distributed uniformly over 1000x1000 squares.
 * `instances/grubhub/` contains problem instances generated from observed meal delivery requests and actual travel time estimates.
 * `instances/grubhub/json/` contains JSON versions of the Grubhub `.tsp` files with pre-computed edge costs.
 * `instances/grubhub/png/` contains graphical representations of test instances, along with optimal tours.
+* `instances/random-uniform/` contains `.tsp` problem instances with random pickup and delivery locations distributed uniformly over 1000x1000 squares.
+* `instances/random-uniform/json/` contains JSON versions of the random uniform `.tsp` files with pre-computed edge costs.
 
 The `.tsp` files use an extension of the TSPLIB format which adds precedence relations in a `PRECEDENCE_SECTION`. For instance, the following TSPPD instance requires `+i` precede `-i` in any feasible tour, for `i` in `{0, 1, ..., n}`.
 
